@@ -92,48 +92,6 @@
             text-shadow: 0 0 20px #007bff, 0 0 30px #007bff;
         }
 
-        a {
-            color: #007bff;
-            font-weight: bold;
-            text-decoration: none;
-            text-shadow: 0 0 20px #007bff;
-            transition: text-shadow 0.3s, color 0.3s;
-        }
-
-        a:hover {
-            color: #fff;
-            text-shadow: 0 0 30px #007bff, 0 0 60px #007bff;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.9);
-            box-shadow: 0 0 30px #007bff;
-        }
-
-        footer p {
-            font-size: 1rem;
-            text-shadow: 0 0 15px #007bff;
-        }
-
-        .contact-details p {
-            margin: 10px 0;
-            text-shadow: 0 0 15px #007bff;
-        }
-
-        .contact-details a {
-            color: #007bff;
-            font-weight: bold;
-            text-decoration: none;
-            text-shadow: 0 0 15px #007bff;
-        }
-
-        .contact-details a:hover {
-            color: #fff;
-            text-shadow: 0 0 30px #007bff, 0 0 60px #007bff;
-        }
-
         .email-form {
             margin-top: 20px;
             padding: 20px;
@@ -195,74 +153,20 @@
         <p>Elevating Visual Experiences with Cutting-Edge Drone Technology</p>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#technology">Technology</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <section id="about">
-        <h2>About Us</h2>
-        <p>The Fly Guys specialize in capturing stunning aerial visuals using state-of-the-art DJI drones like the Mavic 2 Pro. We provide professional-quality photography, videography, and creative content for industries like real estate, events, and marketing.</p>
-    </section>
-
-    <section id="services">
-        <h2>Our Services</h2>
-        <ul>
-            <li>Aerial Photography: High-resolution images for diverse needs</li>
-            <li>Videography: Dynamic drone footage with cinematic quality</li>
-            <li>Real Estate: Highlight properties with compelling visuals</li>
-            <li>Event Coverage: Capture unforgettable moments from above</li>
-            <li>Custom Projects: Tailored services to meet unique demands</li>
-        </ul>
-    </section>
-
-    <section id="technology">
-        <h2>Our Technology</h2>
-        <p>We utilize advanced DJI drones, including the Mavic 2 Pro, equipped with:</p>
-        <ul>
-            <li>20 MP Hasselblad Camera for exceptional image quality</li>
-            <li>4K HDR video capabilities for stunning footage</li>
-            <li>Advanced stabilization for smooth, professional results</li>
-        </ul>
-    </section>
-
     <section id="contact">
         <h2>Contact Us</h2>
-        <div class="contact-details">
-            <p><strong>President & CEO:</strong> Juan Revuelta</p>
-            <p><strong>Phone:</strong> <a href="tel:+15595159411">(559) 515-9411</a></p>
-            <p>
-                <strong>Address:</strong> 
-                <a href="https://www.google.com/maps?q=4400+Sea+Tac+Dr,+Fort+Worth,+TX+76155" target="_blank">
-                    4400 Sea Tac Dr, Fort Worth, TX 76155
-                </a>
-            </p>
-            <p>
-                <strong>Social Media:</strong>
-                <a href="https://www.instagram.com/theflyguysofficial" target="_blank">@TheFlyGuysOfficial</a>
-            </p>
+        <div class="email-form">
+            <h3>Send Us an Email</h3>
+            <form action="send_email.php" method="POST">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
         </div>
-       <div class="email-form">
-    <h3>Send Us an Email</h3>
-    <form action="send_email.php" method="POST">
-        <label for="email">Your Email:</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required>
-        
-        <label for="message">Your Message:</label>
-        <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
-        
-        <button type="submit">Send Message</button>
-    </form>
-</div>
     </section>
-
-    <footer>
-        <p>&copy; 2025 The Fly Guys. All rights reserved.</p>
-    </footer>
 </body>
 </html>
