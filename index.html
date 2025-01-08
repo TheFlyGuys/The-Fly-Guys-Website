@@ -6,109 +6,123 @@
     <title>The Fly Guys</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #000428, #004e92); /* Beautiful gradient background */
+            background: radial-gradient(circle at center, #001f3f, #000428); /* Modern glowing background */
             color: #fff;
         }
 
         header {
-            background-color: rgba(0, 0, 0, 0.7);
             text-align: center;
-            padding: 20px;
-            box-shadow: 0 0 30px #007bff;
+            padding: 40px 20px;
+            background: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 0 40px #007bff;
         }
 
         header img {
             max-width: 200px;
-            margin-bottom: 10px;
-            filter: drop-shadow(0 0 20px #007bff);
+            filter: drop-shadow(0 0 30px #007bff);
         }
 
         header h1 {
-            text-shadow: 0 0 20px #007bff, 0 0 40px #007bff;
-            color: #007bff;
+            font-size: 2.5rem;
+            text-shadow: 0 0 30px #007bff, 0 0 60px #007bff;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            text-shadow: 0 0 15px #007bff;
         }
 
         nav {
-            background-color: rgba(0, 0, 0, 0.8);
-            padding: 10px 0;
-            box-shadow: 0 0 30px #007bff;
+            display: flex;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.9);
+            padding: 15px 0;
+            box-shadow: 0 0 20px #007bff;
         }
 
         nav ul {
             list-style: none;
-            display: flex;
-            justify-content: center;
             margin: 0;
             padding: 0;
-        }
-
-        nav ul li {
-            margin: 0 15px;
+            display: flex;
+            gap: 20px;
         }
 
         nav ul li a {
             color: #fff;
+            font-size: 1rem;
             text-decoration: none;
-            font-weight: bold;
+            padding: 10px 20px;
+            border: 2px solid #007bff;
+            border-radius: 25px;
             text-shadow: 0 0 15px #007bff;
-            transition: text-shadow 0.3s, color 0.3s;
+            transition: all 0.3s ease-in-out;
         }
 
         nav ul li a:hover {
-            color: #007bff;
-            text-shadow: 0 0 25px #007bff, 0 0 50px #007bff;
+            background: #007bff;
+            color: #fff;
+            box-shadow: 0 0 20px #007bff, 0 0 40px #007bff;
         }
 
         section {
-            padding: 20px;
-            max-width: 1200px;
+            padding: 40px 20px;
             margin: 20px auto;
+            max-width: 1200px;
             text-align: center;
+            background: rgba(17, 17, 17, 0.9);
+            border-radius: 15px;
             box-shadow: 0 0 40px #007bff;
-            border-radius: 10px;
-            background-color: rgba(17, 17, 17, 0.9);
         }
 
         section h2 {
-            text-shadow: 0 0 20px #007bff, 0 0 50px #007bff;
-            color: #007bff;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-shadow: 0 0 30px #007bff, 0 0 50px #007bff;
         }
 
-        section a {
+        section p {
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        ul li {
+            text-shadow: 0 0 20px #007bff, 0 0 30px #007bff;
+            margin-bottom: 10px;
+        }
+
+        a {
             color: #007bff;
-            text-decoration: none;
             font-weight: bold;
+            text-decoration: none;
             text-shadow: 0 0 20px #007bff;
             transition: text-shadow 0.3s, color 0.3s;
         }
 
-        section a:hover {
+        a:hover {
             color: #fff;
-            text-shadow: 0 0 40px #007bff, 0 0 80px #007bff;
-        }
-
-        ul li {
-            text-shadow: 0 0 20px #007bff, 0 0 40px #007bff;
+            text-shadow: 0 0 30px #007bff, 0 0 60px #007bff;
         }
 
         footer {
-            background-color: rgba(0, 0, 0, 0.8);
-            color: #fff;
             text-align: center;
-            padding: 10px;
-            margin-top: 20px;
-            box-shadow: 0 0 40px #007bff;
-            text-shadow: 0 0 20px #007bff;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.9);
+            box-shadow: 0 0 30px #007bff;
+        }
+
+        footer p {
+            font-size: 1rem;
+            text-shadow: 0 0 15px #007bff;
         }
 
         footer a {
             color: #007bff;
             text-decoration: none;
             font-weight: bold;
-            text-shadow: 0 0 20px #007bff;
         }
 
         footer a:hover {
