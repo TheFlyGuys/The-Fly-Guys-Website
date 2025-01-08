@@ -3,139 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The Fly Guys - Capturing Perspectives, Elevating Visuals.">
     <title>The Fly Guys</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            color: #fff;
-            background: linear-gradient(135deg, #1e1e1e, #333333);
-            overflow-x: hidden;
+            background-color: #f4f4f4;
+            color: #333;
         }
 
         header {
-            text-align: center;
-            padding: 2rem 1rem;
-            background: linear-gradient(135deg, #444, #222);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-        }
-
-        header h1 {
-            font-size: 3rem;
+            background-color: #000;
             color: #fff;
-            text-shadow: 0 0 10px #00c6ff, 0 0 20px #00c6ff;
+            text-align: center;
+            padding: 20px;
         }
 
-        header p {
-            font-size: 1.5rem;
-            color: #00c6ff;
-            text-shadow: 0 0 10px #fff, 0 0 20px #fff;
+        header img {
+            max-width: 200px;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
         }
 
         section {
-            padding: 4rem 2rem;
-            margin: 2rem;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 12px;
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-            backdrop-filter: blur(8px);
-        }
-
-        section h2 {
-            font-size: 2.5rem;
-            color: #00c6ff;
-            text-align: center;
-            margin-bottom: 1rem;
-            text-shadow: 0 0 10px #00c6ff, 0 0 20px #00c6ff;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
         footer {
-            text-align: center;
-            padding: 2rem 1rem;
-            background: #222;
+            background-color: #000;
             color: #fff;
-            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
-        }
-
-        footer a {
-            color: #00c6ff;
-            text-decoration: none;
-        }
-
-        iframe {
-            width: 100%;
-            height: 500px;
-            border: none;
-            border-radius: 12px;
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        .button-link {
-            display: inline-block;
-            margin-top: 1rem;
-            padding: 0.75rem 1.5rem;
-            color: #fff;
-            background: #00c6ff;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
             text-align: center;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            transition: background 0.3s, box-shadow 0.3s;
-        }
-
-        .button-link:hover {
-            background: #008fcc;
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+            padding: 10px;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
+    <header>
+        <img src="path-to-your-image.jpg" alt="The Fly Guys Logo">
+        <h1>Welcome to The Fly Guys</h1>
+        <p>Elevating Visual Experiences with Cutting-Edge Drone Technology</p>
+    </header>
 
-<!-- Header -->
-<header>
-    <h1>The Fly Guys</h1>
-    <p>Capturing Perspectives, Elevating Visuals</p>
-</header>
+    <nav>
+        <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#technology">Technology</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-<!-- About Us -->
-<section id="about">
-    <h2>About Us</h2>
-    <p>
-        At The Fly Guys, we specialize in creating breathtaking aerial photography and videography to capture unique perspectives.
-        Our mission is to deliver exceptional visuals that inspire and captivate. Whether it's real estate, events, marketing, or custom projects,
-        our team ensures unparalleled quality and creativity.
-    </p>
-</section>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>The Fly Guys specialize in capturing stunning aerial visuals using state-of-the-art DJI drones like the Mavic 2 Pro. We provide professional-quality photography, videography, and creative content for industries like real estate, events, and marketing.</p>
+    </section>
 
-<!-- Portfolio Section -->
-<section id="portfolio">
-    <h2>Our Portfolio</h2>
-    <p>Explore some of our finest works and learn more about how we can bring your vision to life:</p>
-    <iframe 
-        src="/mnt/data/The_Fly_Guys_Portfolio.pdf" 
-        allowfullscreen>
-    </iframe>
-    <a href="/mnt/data/The_Fly_Guys_Portfolio.pdf" class="button-link" download="The_Fly_Guys_Portfolio.pdf">Download Portfolio</a>
-</section>
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Aerial Photography: High-resolution images for diverse needs</li>
+            <li>Videography: Dynamic drone footage with cinematic quality</li>
+            <li>Real Estate: Highlight properties with compelling visuals</li>
+            <li>Event Coverage: Capture unforgettable moments from above</li>
+            <li>Custom Projects: Tailored services to meet unique demands</li>
+        </ul>
+    </section>
 
-<!-- Contact Section -->
-<section id="contact">
-    <h2>Contact Us</h2>
-    <p>
-        <strong>Email:</strong> contact@theflyguys.com<br>
-        <strong>Phone:</strong> <a href="tel:+1234567890" style="color: #00c6ff;">123-456-7890</a><br>
-        <strong>Website:</strong> <a href="https://www.theflyguys.com" style="color: #00c6ff;" target="_blank">www.theflyguys.com</a><br>
-        <strong>Follow us:</strong> <a href="https://instagram.com/TheFlyGuys" style="color: #00c6ff;" target="_blank">@TheFlyGuys</a>
-    </p>
-</section>
+    <section id="technology">
+        <h2>Our Technology</h2>
+        <p>We utilize advanced DJI drones, including the Mavic 2 Pro, equipped with:</p>
+        <ul>
+            <li>20 MP Hasselblad Camera for exceptional image quality</li>
+            <li>4K HDR video capabilities for stunning footage</li>
+            <li>Advanced stabilization for smooth, professional results</li>
+        </ul>
+    </section>
 
-<!-- Footer -->
-<footer>
-    <p>&copy; 2025 The Fly Guys. All rights reserved.</p>
-</footer>
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <p>Explore our portfolio of real estate, events, and creative projects that showcase the best of our aerial visuals.</p>
+    </section>
 
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:contact@theflyguys.com">contact@theflyguys.com</a></p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Follow us on social media: @TheFlyGuys</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 The Fly Guys. All rights reserved.</p>
+    </footer>
 </body>
 </html>
