@@ -10,33 +10,51 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            background: linear-gradient(135deg, #1e1e1e, #333333);
+            color: #fff;
+            overflow-x: hidden;
         }
 
         header {
-            background-color: #000;
-            color: #fff;
             text-align: center;
-            padding: 20px;
+            padding: 3rem 1rem;
+            background: linear-gradient(135deg, #444, #222);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            text-shadow: 0 0 10px #00c6ff, 0 0 20px #00c6ff;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: #00c6ff;
+        }
+
+        header p {
+            color: #fff;
+            font-size: 1.2rem;
         }
 
         header img {
-            max-width: 200px;
-            margin-bottom: 10px;
+            max-width: 150px;
+            margin-bottom: 15px;
+            filter: drop-shadow(0 0 15px #00c6ff);
         }
 
         nav {
-            background-color: #333;
+            background: #111;
             padding: 10px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
 
         nav ul {
             list-style: none;
-            display: flex;
-            justify-content: center;
             margin: 0;
             padding: 0;
+            display: flex;
+            justify-content: center;
         }
 
         nav ul li {
@@ -44,23 +62,56 @@
         }
 
         nav ul li a {
-            color: #fff;
+            color: #00c6ff;
             text-decoration: none;
             font-weight: bold;
+            text-shadow: 0 0 10px #00c6ff;
+            transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+        }
+
+        nav ul li a:hover {
+            color: #fff;
+            text-shadow: 0 0 15px #fff, 0 0 25px #00c6ff;
         }
 
         section {
-            padding: 20px;
+            padding: 4rem 2rem;
+            margin: 2rem auto;
             max-width: 1200px;
-            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(8px);
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            color: #00c6ff;
+            text-align: center;
+            text-shadow: 0 0 10px #00c6ff, 0 0 20px #00c6ff;
+            margin-bottom: 1rem;
+        }
+
+        section p, section ul {
+            text-align: center;
+            font-size: 1.2rem;
         }
 
         footer {
-            background-color: #000;
-            color: #fff;
             text-align: center;
-            padding: 10px;
-            margin-top: 20px;
+            padding: 2rem 1rem;
+            background: #111;
+            color: #fff;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: #00c6ff;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -130,7 +181,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 The Fly Guys. All rights reserved.</p>
+        <p>&copy; 2025 The Fly Guys. All rights reserved. | <a href="#top">Back to top</a></p>
     </footer>
 </body>
 </html>
