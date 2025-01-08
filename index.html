@@ -9,8 +9,8 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            background-color: #000;
+            color: #fff;
         }
 
         header {
@@ -18,16 +18,23 @@
             color: #fff;
             text-align: center;
             padding: 20px;
+            box-shadow: 0 0 20px #00ffcc;
         }
 
         header img {
             max-width: 200px;
             margin-bottom: 10px;
+            filter: drop-shadow(0 0 15px #00ffcc);
+        }
+
+        header h1 {
+            text-shadow: 0 0 15px #00ffcc, 0 0 25px #00ffcc;
         }
 
         nav {
-            background-color: #333;
+            background-color: #111;
             padding: 10px 0;
+            box-shadow: 0 0 20px #00ffcc;
         }
 
         nav ul {
@@ -46,26 +53,47 @@
             color: #fff;
             text-decoration: none;
             font-weight: bold;
+            text-shadow: 0 0 10px #00ffcc;
+            transition: color 0.3s, text-shadow 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #00ffcc;
+            text-shadow: 0 0 15px #00ffcc, 0 0 25px #00ffcc;
         }
 
         section {
             padding: 20px;
             max-width: 1200px;
-            margin: 0 auto;
+            margin: 20px auto;
+            text-align: center;
+            box-shadow: 0 0 20px #00ffcc;
+            border-radius: 10px;
+            background-color: #111;
+        }
+
+        section h2 {
+            text-shadow: 0 0 15px #00ffcc, 0 0 25px #00ffcc;
+        }
+
+        section ul li {
+            text-shadow: 0 0 10px #00ffcc;
         }
 
         footer {
-            background-color: #000;
+            background-color: #111;
             color: #fff;
             text-align: center;
             padding: 10px;
             margin-top: 20px;
+            box-shadow: 0 0 20px #00ffcc;
+            text-shadow: 0 0 10px #00ffcc;
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="path-to-your-image.jpg" alt="The Fly Guys Logo">
+        <img src="fly_guys_logo.jpg" alt="The Fly Guys Logo">
         <h1>Welcome to The Fly Guys</h1>
         <p>Elevating Visual Experiences with Cutting-Edge Drone Technology</p>
     </header>
@@ -113,9 +141,19 @@
 
     <section id="contact">
         <h2>Contact Us</h2>
-        <p>Email: <a href="mailto:contact@theflyguys.com">contact@theflyguys.com</a></p>
-        <p>Phone: (123) 456-7890</p>
-        <p>Follow us on social media: @TheFlyGuys</p>
+        <p>
+            <strong>Address:</strong> 
+            <a href="https://www.google.com/maps/search/?api=1&query=4400+Sea+Tac+Dr,+Fort+Worth,+TX+76155" target="_blank">
+                4400 Sea Tac Dr, Fort Worth, TX 76155
+            </a>
+        </p>
+        <p><strong>Contact:</strong> President & CEO Juan Revuelta</p>
+        <p><strong>Phone:</strong> <a href="tel:+15595159411">(559) 515-9411</a></p>
+        <p><strong>Social Media:</strong> 
+            <a href="https://www.instagram.com/theflyguysofficial?igsh=NjFlc3Bvb2Y1Zmt4" target="_blank">
+                @TheFlyGuysOfficial
+            </a>
+        </p>
     </section>
 
     <footer>
